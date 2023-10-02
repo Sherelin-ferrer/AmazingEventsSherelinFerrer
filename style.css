@@ -1,0 +1,22 @@
+
+*{
+    background-image: url(./fondos-de-colores-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.navbars{
+    background-color: lightgray;
+}
+
+
+
+
+.formulario{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+   
+}
