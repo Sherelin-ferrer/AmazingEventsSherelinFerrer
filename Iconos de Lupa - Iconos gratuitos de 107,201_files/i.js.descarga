@@ -1,6 +1,0 @@
-(function() {
-	(document.createElement('IMG')).src = 'https://prebid.a-mo.net/cchain/0?gdpr=0&gdpr_consent=&us_privacy=&cb=https%3A//cm.mgid.com/m%3Fcdsp%3D779131%26c%3D';
-	(document.createElement('IMG')).src = 'https://ad.360yield.com/server_match?partner_id=1944&gdpr=0&gdpr_consent=&us_privacy=&r=https%3A%2F%2Fcm.mgid.com%2Fm%3Fcdsp%3D665953%26c%3D%7BPUB_USER_ID%7D';
-	var d817115 = document.createElement('div');d817115.innerHTML="<iframe width=\"0\" height=\"0\" frameborder=\"0\" scrolling=\"no\" src=\"https://cdn.connectad.io/connectmyusers.php?us_privacy=&gdpr_consent=&cb=https%3A%2F%2Fcm.mgid.com%2Fm%3Fcdsp%3D817115%26c%3D\" style=\"display: none;\" marginheight=\"0\" marginwidth=\"0\"></iframe>";document.body.appendChild(d817115);
-	(document.createElement('IMG')).src = 'https://creativecdn.com/cm-notify?pi=mgid&gdpr=0&gdpr_consent=&us_privacy=';
-})()

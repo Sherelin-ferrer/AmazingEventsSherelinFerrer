@@ -1,26 +1,129 @@
-
-
-header{
-    background-color: chartreuse;
-    height: max-content;
-
-}
- main{
-    background-color: darksalmon;
- }
-footer{
-    background-color: #c70c98;
-    height: max-content;
+body{
+ background-color: #66caa9;
 }
 
+.header{
+    min-height: 10vh;
+    
+}
+.btn{
+    height: 3rem;
+    margin: 5px;
+    align-items: center;
+}
+
+.logo{
+    width:7rem;
+    height: 4rem;
+    margin-left: 2rem;
+    
+   
+}
 
 
 
+main{
+    min-height: 80vh;
+}
+.d-item{
+    height: 200px;
+}
+
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+}
 
 .formulario{
     display: flex;
-    justify-content: space-evenly;
-    margin: 2rem;
-    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+.fomu{
+    display: flex;
+        width: 50rem;
+    }
+    
+    .btn{
+        display: flex;
+       justify-content: end;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: end;
+        margin-top: 1rem;
+    }
+    
+    
+    
+    table,th,td,tr{
+       justify-content: center;
+        
+       margin-top: 4rem;
+       
+       
+        border: solid 1px black;
+        
+        text-align: center;
+        padding: 0%;
+     }
+
+.titu{
+    text-align: start;
    
 }
+th{
+    background-color: darkgray;
+}
+
+
+footer{
+    min-height: 10vh;
+    background-color: lightgrey;
+}
+
+.imgfoo{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.img1{
+   width:2rem ;
+   height: 2rem;
+   
+  
+}
+
+.img2{
+    width:2rem ;
+    height: 2rem;
+    margin-left: 2rem;
+
+ }
+
+ .img3{
+    width:2rem ;
+    height: 2rem;
+    margin-left: 2rem;
+   
+
+ }
+
+ .primertitulo{
+    margin-right: 2rem;
+ 
+ 
+ }
+
+
+
+
+

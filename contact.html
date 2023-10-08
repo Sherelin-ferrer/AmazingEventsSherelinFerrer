@@ -8,35 +8,104 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png">
 </head>
 
 <body>
     <header>
-        <nav>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container" >
-                  <a class="navbar-brand" href="#">
-                    <img src="./amazing_brand.png" alt="Logo Amazing" width="max-content" height="24">
-                  </a>
-                  <a href="#">Home</a>
-            <a href="./pastevents.html">Past Events</a>
-            <a href="./upcomingevents.html">Upcomin Events</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./stats.html">Stats</a>
-                </div>
-              </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex ">
             
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./"><img class="logo" src="./amazing_brand.png " id="logo"
+                            alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn btn-outline-success">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item btn btn-outline-success">
+                            <a class="nav-link" href="./pastevents.html">Paste Events</a>
+                        </li>
+                        <li class="nav-item btn btn-outline-success">
+                            <a class="nav-link" href="./upcomingevents.html">Upcomin gevents</a>
+                        </li>
+                        <li class="nav-item btn btn-outline-success">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item btn btn-outline-success">
+                            <a class="nav-link" href="./stats.html">Stats</a>
+                        </li>
+
+                    </ul>
+                </div>
+
            
         </nav>
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active d-item">
+                    <img src="./optional_banner_1.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption ">
+                        <h6 class="display-1 fw-bolder text-capitalize">HOME</h6>
+                    </div>
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="optional_banner_2.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption ">
+                        <h6 class="display-1 fw-bolder text-capitalize">PAST EVENTS</h6>
+                    </div>
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="optional_banner_3.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption ">
+                        <h6 class="display-1 fw-bolder text-capitalize">UPCOMING EVENTS</h6>
+                    </div>
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="optional_banner_4.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption ">
+                        <h6 class="display-1 fw-bolder text-capitalize">STATS</h6>
+                    </div>
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="optional_banner_5.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption ">
+                        <h6 class="display-1 fw-bolder text-capitalize">CONTACT</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </header>
 
-    <main>
+    <main class="formulario justify-content-center expand-sm">
+        <div class="mb-3 ">
+            <label for="exampleFormControlInput1" class="form-label ">Name:</label>
+            <input type="text" class="form-control fomu" id="text" placeholder="Sherelin ferrer">
 
+            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+            <input type="email" class="form-control fomu" id="exampleFormControlInput1" placeholder="name@example.com">
 
-
-
-
-
+            <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+            <textarea class="form-control fomu" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="boton">
+                <button type="submit" class="btn btn-success ">submite</button>
+            </div>
+        </div>
 
 
 
@@ -46,12 +115,19 @@
 
     </main>
 
-    <footer>
+    <footer class="d-flex justify-content-between align-items-center">
+       
+        <div>
+            <img class="img1" src="./facebook.png" alt="">
+            <img class="img2" src="./whatsapp.png" alt="">
+            <img class="img3" src="./instagram.png" alt="">
 
-
-
-
-    </footer>
+        </div>
+        <div>
+            <h3 class="primertitulo ">COHORT</h3>
+        </div>
+  
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
