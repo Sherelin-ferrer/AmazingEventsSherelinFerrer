@@ -1,16 +1,18 @@
-body{
- background-color: #66caa9;
-}
-
 .header{
     min-height: 10vh;
     
 }
-.btn{
-    height: 3rem;
-    margin: 5px;
-    align-items: center;
+
+body{
+ background-color:hsl(130, 75%, 80%) ;
 }
+
+main{
+    min-height: 80vh;
+}
+
+
+
 
 .logo{
     width:7rem;
@@ -20,11 +22,13 @@ body{
    
 }
 
-
-
-main{
-    min-height: 80vh;
+.btn{
+    height: 3rem;
+    margin: 5px;
+    align-items: center;
 }
+
+
 .d-item{
     height: 200px;
 }
@@ -40,6 +44,7 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+
 }
 
 
