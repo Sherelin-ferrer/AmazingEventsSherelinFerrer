@@ -26,8 +26,21 @@ main{
     height: 3rem;
     margin: 5px;
     align-items: center;
+    
 }
 
+.nav-item{
+    width: max-content;
+    
+   }
+   .nav-link:hover{
+   background-color:hwb(89 49% 22%) ;
+   border-radius: 6px;
+   transition: 0.3s;
+   
+   }
+
+  
 
 .d-item{
     height: 200px;
@@ -129,6 +142,9 @@ footer{
  }
 
 
-
+.card{
+    width: 18rem;
+    height: 30rem;
+}
 
 

@@ -7,7 +7,7 @@ for(let cartas of events){
 
 const card = document.createElement("div")
 card.classList.add("card")
-card.style.width = "18rem"
+
 card.innerHTML = `
 
 <img src="${cartas.image}" class="card-img-top h-50 " alt="...">
