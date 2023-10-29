@@ -21,7 +21,7 @@ card.innerHTML = `
 </div>
 <div class="d-flex justify-content-between m-3">
     <p> $ ${cartas.price}</p>
-    <a href="./details.html" class="btn btn-outline-success">Details</a>
+    <a href="./details.html?id=${cartas._id}" class="btn btn-outline-success">Details</a>
 
 </div>
 `
