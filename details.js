@@ -15,8 +15,8 @@ function crearCard(arrayeventos){
     card.style.width =""
     card.innerHTML = `
     
-    <img src="${arrayeventos.image}" class="card-img img-fluid imgd h-50  " alt="...">
-    <div class="card-body gap-1 d-flex flex-column justify-content-center contenido">
+    <img src="${arrayeventos.image}" class="card-img img-fluid imgd  " alt="...">
+    <div class="card-body gap-1 d-flex flex-column  contenido">
         <h5 class="card-title">${arrayeventos.name} </h5>
         <p class="card-text">${arrayeventos.description}</p>
         <p class="card-text"> Category: ${arrayeventos.category}</p>

@@ -27,35 +27,16 @@ mostrarchecks(categorias)
 
 console.log(categorias)
 
+function filtrarTarjetasPorCategoria(category) {
+ 
+    return events.filter(evento => evento.category.replace(" ", "-") == category);
+    
+}
+function filtrarPorTexto(texto, arrayEventos) {
+    return arrayEventos.filter(evento => evento.name.toLowerCase().includes(texto.toLowerCase()));
+}
 
 
-function filtrarCategory (arrayEventosFiltrados){
-
-    let checked = Array.from(document.querySelectorAll(`input[type="checkbox"]:checked`)).map(checkbox => checkbox.value)
-
-    let categoriasFiltradas = []
-    arrayEventosFiltrados.forEach(events =>{
-        checked.forEach(categorias =>{
-            if( categorias == events.category.replace(" ","-")){
-                categoriasFiltradas.push(events) 
-            }
-        })
-    })
-    if (categoriasFiltradas.length == 0){
-        categoriasFiltradas = arrayEventosFiltrados
-    }
-    console-log(arrayEventosFiltrados)
-    console.log(categoriasFiltradas)
-    return categoriasFiltradas
-} 
-
-
-
-
-
-function filtrarTexto(arrayEventosFiltrados){
-   return arrayEventosFiltrados.filter(eventos => events.name.tolowercase().includes(contenedorsearch.value.tolowercase()))
-}console.log(filtrarTexto)
 
 
 function crearCard (arrayEventosFiltrados){
@@ -96,22 +77,25 @@ function crearCard (arrayEventosFiltrados){
 
 
 
-
-
-
 function superFiltro(arrayEventosFiltrados){
-    let filtro1 = filtrarCategory(arrayEventosFiltrados)
+    let filtro1 = filtrarTarjetasPorCategoria(arrayEventosFiltrados)
     let filtro2 = filtrarTexto(filtro1)
     crearCard(filtro2)
 }
+contenedorCheck.addEventListener("change", (event) => {
+    if (event.target.checked) {
+        let category = event.target.value.replace(" ", "-");
+        let tarjetasFiltradas = filtrarTarjetasPorCategoria(category);
+        crearCard(tarjetasFiltradas);
+    } else {
+        crearCard(events); 
+    }
+});
 
-contenedorCheck.addEventListener("change",()=>{
-     superFiltro (events)
-   
-})
 
-contenedorsearch.addEventListener("keyup", ()=>{
-    superFiltro(events)
-  
-
-})
+contenedorsearch.addEventListener("keyup", (event) => {
+    const texto = event.target.value;
+    const eventosFiltradosPorTexto = filtrarPorTexto(texto, events);
+    
+    crearCard(eventosFiltradosPorTexto);
+});
