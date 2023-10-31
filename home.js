@@ -89,6 +89,7 @@ contenedorCheck.addEventListener("change", (event) => {
         crearCard(tarjetasFiltradas);
     } else {
         crearCard(events); 
+        console.log(crearCard)
     }
 });
 
