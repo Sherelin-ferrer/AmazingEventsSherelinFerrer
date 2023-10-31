@@ -66,7 +66,7 @@ contenedor.appendChild(card)
   
 }})}
 
-  }
+  } crearCard(events)
 
 
 
