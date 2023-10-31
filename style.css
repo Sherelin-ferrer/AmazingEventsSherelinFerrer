@@ -159,38 +159,32 @@ footer{
 
 .imgd{
   display: flex;
- width: 25rem;
- flex-direction: row;
+ width: 28rem;
+ 
  height: 25rem;
  justify-content: space-around;
- align-items: flex-start;
- position: relative;
- left: 22rem;
- padding: 2rem;
+ 
+ 
 
 }
 
 .contenido{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-    bottom:23rem ;
-    align-items: center;
-    right: 12rem;
-    
+    width: 15rem;
+    justify-content: space-evenly;
+  font-size:medium;
    
 }
 .cardes{
     display: flex;
-    width: 70rem;
-    justify-content: space-around;
-    flex-direction: row;
-    height: 25rem;
-    flex-direction: row;
+    width: max-content;
+    justify-content: space-evenly;
+   
+   margin: 2rem;
 }
 .chec{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }

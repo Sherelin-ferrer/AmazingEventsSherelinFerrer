@@ -19,10 +19,10 @@ function crearCard(arrayeventos){
     <div class="card-body gap-1 d-flex flex-column  contenido">
         <h5 class="card-title">${arrayeventos.name} </h5>
         <p class="card-text">${arrayeventos.description}</p>
-        <p class="card-text"> Category: ${arrayeventos.category}</p>
-        <p class="card-text"> Place: ${arrayeventos. place}</p>
-        <p class="card-text"> Capacity: ${arrayeventos.capacity}</p>
-        <p> $ ${arrayeventos.price}</p>
+        <p class="card-text"><strong> Category:</strong> ${arrayeventos.category}</p>
+        <p class="card-text"><strong> Place:</strong> ${arrayeventos. place}</p>
+        <p class="card-text"><strong> Capacity:</strong> ${arrayeventos.capacity}</p>
+        <p><strong>$</strong> ${arrayeventos.price}</p>
         
     </div>
     
